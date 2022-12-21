@@ -1,15 +1,15 @@
 {
   "version": 2,
   "builds": [
-      {
-          "src": "*.py",
-          "use": "@liudonghua123/now-flask"
-      }
+    {
+      "src": "./bot.py",
+      "use": "@vercel/python"
+    }
   ],
   "routes": [
-      {
-          "src": "(.*)",
-          "dest": "bot.py"
-      }
+    {
+      "src": "/(.*)",
+      "dest": "bot.py"
+    }
   ]
 }
